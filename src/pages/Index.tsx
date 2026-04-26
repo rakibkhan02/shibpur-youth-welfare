@@ -71,7 +71,7 @@ const Index = () => {
         </div>
         <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 py-16 md:px-8 lg:grid-cols-[1fr_0.8fr] lg:py-24">
           <div className="animate-reveal">
-            <p className="mb-5 inline-flex rounded-full border border-primary/20 bg-card/80 px-4 py-2 text-sm font-bold text-primary shadow-sm backdrop-blur">মানবতার সেবায় আমরা অঙ্গীকারবদ্ধ</p>
+            <p className="mb-5 inline-flex rounded-full border border-secondary bg-secondary px-4 py-2 text-sm font-bold text-secondary-foreground shadow-sm backdrop-blur">মানবতার সেবায় আমরা অঙ্গীকারবদ্ধ</p>
             <h1 className="max-w-4xl text-4xl font-black leading-tight text-deep md:text-6xl lg:text-7xl">শিবপুর যুব কল্যাণ ফাউন্ডেশন ১৯</h1>
             <p className="mt-6 max-w-2xl text-lg font-medium leading-8 text-muted-foreground md:text-xl">
               “শিবপুর যুব কল্যাণ ফাউন্ডেশন নাইন্টিন” একটি অরাজনৈতিক ও অলাভজনক সেবামূলক প্রতিষ্ঠান।
