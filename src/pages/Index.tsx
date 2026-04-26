@@ -125,24 +125,6 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="gallery" className="bg-background py-20">
-        <div className="mx-auto max-w-7xl px-4 md:px-8">
-          <p className="font-bold text-primary">গ্যালারি</p>
-          <div className="mt-8 grid gap-5 md:grid-cols-2">
-            <a href="#gallery" className="group rounded-2xl border border-border bg-card p-7 shadow-soft transition hover:-translate-y-1 hover:shadow-lift">
-              <span className="grid size-14 place-items-center rounded-full bg-primary text-primary-foreground"><Image /></span>
-              <span className="mt-5 block text-2xl font-black text-deep">ছবি গ্যালারি</span>
-              <span className="mt-2 block leading-7 text-muted-foreground">এখানে একাধিক ছবি রাখা যাবে।</span>
-            </a>
-            <a href="#gallery" className="group rounded-2xl border border-border bg-card p-7 shadow-soft transition hover:-translate-y-1 hover:shadow-lift">
-              <span className="grid size-14 place-items-center rounded-full bg-secondary text-secondary-foreground"><Video /></span>
-              <span className="mt-5 block text-2xl font-black text-deep">ভিডিও গ্যালারি</span>
-              <span className="mt-2 block leading-7 text-muted-foreground">এখানে একাধিক ভিডিও রাখা যাবে।</span>
-            </a>
-          </div>
-        </div>
-      </section>
-
       <section id="join" className="bg-primary py-20 text-primary-foreground">
         <div className="mx-auto grid max-w-7xl gap-8 px-4 md:px-8 lg:grid-cols-[1fr_0.9fr] lg:items-center">
           <div>
