@@ -164,7 +164,6 @@ const Index = () => {
         <div className="mx-auto grid max-w-7xl gap-8 px-4 md:px-8 lg:grid-cols-2">
           <div>
             <p className="font-bold text-primary">যোগাযোগ</p>
-            <h2 className="mt-3 text-3xl font-black text-deep md:text-5xl">শিবপুর খাসের হাট, ভোলা</h2>
             <div className="mt-8 space-y-4 text-lg font-semibold text-muted-foreground">
               <p className="flex gap-3"><MapPin className="mt-1 text-primary" /> ৮৩৫০, শিবপুর খাসের হাট, তজুমদ্দিন, ভোলা</p>
               <p className="flex gap-3"><Phone className="mt-1 text-primary" /> 01615-345486</p>
