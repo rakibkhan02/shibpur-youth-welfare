@@ -2,10 +2,12 @@ import {
   Facebook,
   HandHeart,
   HeartPulse,
+  Image as ImageIcon,
   Mail,
   MapPin,
   Menu,
   Phone,
+  PlayCircle,
   Sprout,
   Users,
 } from "lucide-react";
@@ -18,6 +20,7 @@ const navItems = [
   ["হোম", "#home"],
   ["আমাদের সম্পর্কে", "#about"],
   ["কার্যক্রম", "#programs"],
+  ["গ্যালারি", "#gallery"],
   ["আমাদের সাথে যুক্ত হোন", "#join"],
   ["অনুদান", "#donate"],
   ["যোগাযোগ", "#contact"],
@@ -121,6 +124,16 @@ const Index = () => {
                 <Sprout /> {program}
               </Button>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" className="bg-background py-20">
+        <div className="mx-auto max-w-7xl px-4 md:px-8">
+          <p className="font-bold text-primary">গ্যালারি</p>
+          <div className="mt-8 flex flex-wrap gap-4">
+            <Button asChild variant="hero" size="pill"><a href="#gallery"><ImageIcon /> ছবি</a></Button>
+            <Button asChild variant="warm" size="pill"><a href="#gallery"><PlayCircle /> ভিডিও</a></Button>
           </div>
         </div>
       </section>
