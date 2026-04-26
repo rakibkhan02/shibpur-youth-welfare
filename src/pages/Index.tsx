@@ -2,6 +2,7 @@ import {
   Facebook,
   HandHeart,
   HeartPulse,
+  Image,
   Mail,
   MapPin,
   Menu,
@@ -9,10 +10,10 @@ import {
   PlayCircle,
   Sprout,
   Users,
+  Video,
 } from "lucide-react";
 
 import communityHero from "@/assets/community-service-bangladesh.jpg";
-import galleryBloodCampaign from "@/assets/gallery-blood-campaign.png";
 import sjkfnLogo from "@/assets/sjkfn-logo.jpg";
 import { Button } from "@/components/ui/button";
 
