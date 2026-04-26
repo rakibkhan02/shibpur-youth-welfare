@@ -49,7 +49,6 @@ const donations = [
 const galleryPhotos = [
   { src: galleryBloodCampaign, alt: "ফ্রি রক্তের গ্রুপ নির্ণয় ক্যাম্পেইন", title: "রক্তের গ্রুপ নির্ণয় ক্যাম্পেইন" },
   { src: galleryTreePlantation, alt: "বৃক্ষরোপণ কার্যক্রম", title: "বৃক্ষরোপণ কার্যক্রম" },
-  { src: communityHero, alt: "স্বেচ্ছাসেবীদের সমাজসেবামূলক কার্যক্রম", title: "স্বেচ্ছাসেবী কার্যক্রম" },
 ];
 
 const galleryVideos = [
