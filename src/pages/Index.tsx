@@ -2,15 +2,12 @@ import {
   Facebook,
   HandHeart,
   HeartPulse,
-  Image,
   Mail,
   MapPin,
   Menu,
   Phone,
-  PlayCircle,
   Sprout,
   Users,
-  Video,
 } from "lucide-react";
 
 import communityHero from "@/assets/community-service-bangladesh.jpg";
@@ -21,7 +18,6 @@ const navItems = [
   ["হোম", "#home"],
   ["আমাদের সম্পর্কে", "#about"],
   ["কার্যক্রম", "#programs"],
-  ["গ্যালারি", "#gallery"],
   ["আমাদের সাথে যুক্ত হোন", "#join"],
   ["অনুদান", "#donate"],
   ["যোগাযোগ", "#contact"],
