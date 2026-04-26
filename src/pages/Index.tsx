@@ -116,7 +116,6 @@ const Index = () => {
           <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
             <div>
               <p className="font-bold text-primary">আমাদের কার্যক্রম</p>
-              <h2 className="mt-3 text-3xl font-black text-deep md:text-5xl">সেবার প্রতিটি উদ্যোগ</h2>
             </div>
             <div id="gallery" className="flex gap-3">
               <Button variant="soft" size="pill">ছবি</Button>
