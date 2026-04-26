@@ -160,11 +160,30 @@ const Index = () => {
         <div className="mx-auto max-w-7xl px-4 md:px-8">
           <p className="font-bold text-primary">গ্যালারি</p>
           <div className="mt-8 flex flex-wrap gap-4">
-            <Button asChild variant="hero" size="pill"><a href="#gallery"><ImageIcon /> ছবি</a></Button>
+            <Button type="button" variant="hero" size="pill" onClick={openPhotoGallery}><ImageIcon /> ছবি</Button>
             <Button asChild variant="warm" size="pill"><a href="#gallery"><PlayCircle /> ভিডিও</a></Button>
           </div>
+          {showPhotoGallery && (
+            <div id="photo-gallery" className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              {galleryImages.map((image, index) => (
+                <button key={image.title} type="button" onClick={() => setActiveImage(index)} className="group overflow-hidden rounded-2xl border border-border bg-card text-left shadow-soft transition hover:-translate-y-1 hover:shadow-lift">
+                  <img src={image.src} alt={image.alt} className="aspect-video w-full object-cover transition duration-300 group-hover:scale-105" loading="lazy" />
+                  <span className="block px-5 py-4 text-lg font-extrabold text-deep">{image.title}</span>
+                </button>
+              ))}
+            </div>
+          )}
         </div>
       </section>
+
+      {activeImage !== null && (
+        <div className="fixed inset-0 z-[60] flex items-center justify-center bg-deep/90 p-4" role="dialog" aria-modal="true" aria-label="ছবি গ্যালারি">
+          <Button variant="soft" size="icon" className="absolute right-4 top-4" aria-label="বন্ধ করুন" onClick={() => setActiveImage(null)}><X /></Button>
+          <Button variant="soft" size="icon" className="absolute left-4 top-1/2 -translate-y-1/2" aria-label="আগের ছবি" onClick={showPreviousImage}><ChevronLeft /></Button>
+          <img src={galleryImages[activeImage].src} alt={galleryImages[activeImage].alt} className="max-h-[82vh] max-w-[88vw] rounded-2xl border border-primary/20 object-contain shadow-soft" />
+          <Button variant="soft" size="icon" className="absolute right-4 top-1/2 -translate-y-1/2" aria-label="পরের ছবি" onClick={showNextImage}><ChevronRight /></Button>
+        </div>
+      )}
 
       <section id="join" className="bg-primary py-20 text-primary-foreground">
         <div className="mx-auto grid max-w-7xl gap-8 px-4 md:px-8 lg:grid-cols-[1fr_0.9fr] lg:items-center">
