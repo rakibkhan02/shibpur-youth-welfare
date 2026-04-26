@@ -118,8 +118,8 @@ const Index = () => {
               <p className="font-bold text-primary">আমাদের কার্যক্রম</p>
             </div>
             <div id="gallery" className="flex gap-3">
-              <Button variant="soft" size="pill">ছবি</Button>
-              <Button variant="soft" size="pill"><PlayCircle /> ভিডিও</Button>
+              <Button asChild variant="hero" size="pill"><a href="#gallery"><Sprout /> ছবি গ্যালারি</a></Button>
+              <Button asChild variant="warm" size="pill"><a href="#gallery"><PlayCircle /> ভিডিও গ্যালারি</a></Button>
             </div>
           </div>
           <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
