@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 
 import communityHero from "@/assets/community-service-bangladesh.jpg";
+import sjkfnLogo from "@/assets/sjkfn-logo.jpg";
 import { Button } from "@/components/ui/button";
 
 const navItems = [
@@ -45,9 +46,7 @@ const Index = () => {
       <header className="fixed inset-x-0 top-0 z-50 border-b border-border/70 bg-background/85 backdrop-blur-xl">
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 md:px-8">
           <a href="#home" className="flex items-center gap-3 font-extrabold text-primary">
-            <span className="grid size-11 place-items-center rounded-full bg-primary text-primary-foreground shadow-lift">
-              <Sprout className="size-6" />
-            </span>
+            <img src={sjkfnLogo} alt="শিবপুর যুব কল্যাণ ফাউন্ডেশন ১৯ লোগো" className="size-12 rounded-full border border-border bg-card object-cover shadow-lift" width={48} height={48} />
             <span className="leading-tight">শিবপুর যুব কল্যাণ<br className="sm:hidden" /> ফাউন্ডেশন ১৯</span>
           </a>
           <div className="hidden items-center gap-1 lg:flex">
@@ -178,7 +177,10 @@ const Index = () => {
 
       <footer className="bg-deep px-4 py-10 text-primary-foreground md:px-8">
         <div className="mx-auto flex max-w-7xl flex-col gap-5 md:flex-row md:items-center md:justify-between">
-          <p className="font-bold">Copyright © 2026<br />শিবপুর যুব কল্যাণ ফাউন্ডেশন ১৯</p>
+          <div className="flex items-center gap-3">
+            <img src={sjkfnLogo} alt="শিবপুর যুব কল্যাণ ফাউন্ডেশন ১৯ লোগো" className="size-12 rounded-full border border-primary/30 bg-card object-cover" width={48} height={48} />
+            <p className="font-bold">Copyright © 2026<br />শিবপুর যুব কল্যাণ ফাউন্ডেশন ১৯</p>
+          </div>
           <div className="flex gap-3">
             <a aria-label="Facebook" href="#contact" className="grid size-11 place-items-center rounded-full bg-primary text-primary-foreground transition hover:-translate-y-1"><Facebook /></a>
             <a aria-label="Email" href="mailto:shibpurjubokollanfoundation@gmail.com" className="grid size-11 place-items-center rounded-full bg-primary text-primary-foreground transition hover:-translate-y-1"><Mail /></a>
