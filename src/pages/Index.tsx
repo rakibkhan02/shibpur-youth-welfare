@@ -1,7 +1,4 @@
 import {
-  ChevronLeft,
-  ChevronRight,
-  X,
   Facebook,
   HandHeart,
   HeartPulse,
@@ -13,7 +10,6 @@ import {
   Sprout,
   Users,
 } from "lucide-react";
-import { useState } from "react";
 
 import communityHero from "@/assets/community-service-bangladesh.jpg";
 import galleryBloodCampaign from "@/assets/gallery-blood-campaign.png";
@@ -47,23 +43,7 @@ const donations = [
   ["Rocket", "01603462997"],
 ];
 
-const galleryImages = [
-  { src: galleryBloodCampaign, alt: "ফ্রি রক্তের গ্রুপ নির্ণয় ক্যাম্পেইন", title: "রক্তের গ্রুপ নির্ণয় ক্যাম্পেইন" },
-  { src: communityHero, alt: "স্বেচ্ছাসেবীদের সমাজসেবামূলক কার্যক্রম", title: "সমাজসেবামূলক কার্যক্রম" },
-  { src: sjkfnLogo, alt: "শিবপুর যুব কল্যাণ ফাউন্ডেশন ১৯ লোগো", title: "ফাউন্ডেশনের লোগো" },
-];
-
 const Index = () => {
-  const [activeImage, setActiveImage] = useState<number | null>(null);
-
-  const showPreviousImage = () => {
-    setActiveImage((current) => (current === null ? 0 : (current - 1 + galleryImages.length) % galleryImages.length));
-  };
-
-  const showNextImage = () => {
-    setActiveImage((current) => (current === null ? 0 : (current + 1) % galleryImages.length));
-  };
-
   return (
     <main className="min-h-screen overflow-hidden bg-gradient-soft text-foreground">
       <header className="fixed inset-x-0 top-0 z-50 border-b border-border/70 bg-background/85 backdrop-blur-xl">
