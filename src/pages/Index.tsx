@@ -144,6 +144,36 @@ const Index = () => {
         </div>
       </section>
 
+      <section id="gallery" className="bg-background py-20">
+        <div className="mx-auto max-w-7xl px-4 md:px-8">
+          <p className="font-bold text-primary">গ্যালারি</p>
+          <div className="mt-8 flex flex-wrap gap-4">
+            <Button type="button" variant={activeGallery === "photos" ? "hero" : "soft"} size="pill" onClick={() => setActiveGallery("photos")}><ImageIcon /> ছবি</Button>
+            <Button type="button" variant={activeGallery === "videos" ? "warm" : "soft"} size="pill" onClick={() => setActiveGallery("videos")}><PlayCircle /> ভিডিও</Button>
+          </div>
+          {activeGallery === "photos" ? (
+            <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              {galleryPhotos.map((photo) => (
+                <article key={photo.title} className="overflow-hidden rounded-2xl border border-border bg-card shadow-soft">
+                  <img src={photo.src} alt={photo.alt} className="aspect-video w-full object-cover" loading="lazy" />
+                  <p className="px-5 py-4 text-lg font-extrabold text-deep">{photo.title}</p>
+                </article>
+              ))}
+            </div>
+          ) : (
+            <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              {galleryVideos.map((video) => (
+                <article key={video.title} className="rounded-2xl border border-border bg-card p-6 shadow-soft">
+                  <PlayCircle className="size-10 text-primary" />
+                  <h3 className="mt-4 text-xl font-extrabold text-deep">{video.title}</h3>
+                  <p className="mt-2 leading-7 text-muted-foreground">{video.text}</p>
+                </article>
+              ))}
+            </div>
+          )}
+        </div>
+      </section>
+
       <section id="join" className="bg-primary py-20 text-primary-foreground">
         <div className="mx-auto grid max-w-7xl gap-8 px-4 md:px-8 lg:grid-cols-[1fr_0.9fr] lg:items-center">
           <div>
