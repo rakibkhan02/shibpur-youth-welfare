@@ -1,4 +1,7 @@
 import {
+  ChevronLeft,
+  ChevronRight,
+  X,
   Facebook,
   HandHeart,
   HeartPulse,
@@ -11,8 +14,11 @@ import {
   Sprout,
   Users,
 } from "lucide-react";
+import { useState } from "react";
 
 import communityHero from "@/assets/community-service-bangladesh.jpg";
+import galleryBloodCampaign from "@/assets/gallery-blood-campaign.png";
+import galleryTreePlantation from "@/assets/gallery-tree-plantation.png";
 import sjkfnLogo from "@/assets/sjkfn-logo.jpg";
 import { Button } from "@/components/ui/button";
 
@@ -43,7 +49,29 @@ const donations = [
   ["Rocket", "01603462997"],
 ];
 
+const galleryImages = [
+  { src: galleryBloodCampaign, alt: "ফ্রি রক্তের গ্রুপ নির্ণয় ক্যাম্পেইন", title: "রক্তের গ্রুপ নির্ণয় ক্যাম্পেইন" },
+  { src: galleryTreePlantation, alt: "শিবপুর যুব কল্যাণ ফাউন্ডেশন ১৯ এর বৃক্ষরোপণ কার্যক্রম", title: "বৃক্ষরোপণ কার্যক্রম" },
+  { src: communityHero, alt: "স্বেচ্ছাসেবীদের সমাজসেবামূলক কার্যক্রম", title: "স্বেচ্ছাসেবী কার্যক্রম" },
+];
+
 const Index = () => {
+  const [showPhotoGallery, setShowPhotoGallery] = useState(false);
+  const [activeImage, setActiveImage] = useState<number | null>(null);
+
+  const openPhotoGallery = () => {
+    setShowPhotoGallery(true);
+    window.setTimeout(() => document.getElementById("photo-gallery")?.scrollIntoView({ behavior: "smooth" }), 0);
+  };
+
+  const showPreviousImage = () => {
+    setActiveImage((current) => (current === null ? 0 : (current - 1 + galleryImages.length) % galleryImages.length));
+  };
+
+  const showNextImage = () => {
+    setActiveImage((current) => (current === null ? 0 : (current + 1) % galleryImages.length));
+  };
+
   return (
     <main className="min-h-screen overflow-hidden bg-gradient-soft text-foreground">
       <header className="fixed inset-x-0 top-0 z-50 border-b border-border/70 bg-background/85 backdrop-blur-xl">
