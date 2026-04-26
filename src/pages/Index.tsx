@@ -168,7 +168,7 @@ const Index = () => {
               <p className="flex gap-3"><MapPin className="mt-1 text-primary" /> ৮৩৫০, শিবপুর খাসের হাট, তজুমদ্দিন, ভোলা</p>
               <p className="flex gap-3"><Phone className="mt-1 text-primary" /> 01615-345486</p>
               <p className="flex gap-3"><Mail className="mt-1 text-primary" /> shibpurjubokollanfoundation@gmail.com</p>
-              <p className="flex gap-3"><Facebook className="mt-1 text-primary" /> Facebook Page link</p>
+              <p className="flex gap-3"><Facebook className="mt-1 text-primary" /> <a href="https://www.facebook.com/share/1AuY5f7GGL/" target="_blank" rel="noreferrer" className="transition hover:text-primary">Facebook Page link</a></p>
             </div>
           </div>
           <iframe title="শিবপুর খাসের হাট ম্যাপ" className="min-h-[360px] w-full rounded-2xl border border-border shadow-soft" loading="lazy" src="https://www.google.com/maps?q=Shibpur%20Khaser%20Hat%20Tazumuddin%20Bhola&output=embed" />
@@ -182,7 +182,7 @@ const Index = () => {
             <p className="font-bold">Copyright © 2026<br />শিবপুর যুব কল্যাণ ফাউন্ডেশন ১৯</p>
           </div>
           <div className="flex gap-3">
-            <a aria-label="Facebook" href="#contact" className="grid size-11 place-items-center rounded-full bg-primary text-primary-foreground transition hover:-translate-y-1"><Facebook /></a>
+            <a aria-label="Facebook" href="https://www.facebook.com/share/1AuY5f7GGL/" target="_blank" rel="noreferrer" className="grid size-11 place-items-center rounded-full bg-primary text-primary-foreground transition hover:-translate-y-1"><Facebook /></a>
             <a aria-label="Email" href="mailto:shibpurjubokollanfoundation@gmail.com" className="grid size-11 place-items-center rounded-full bg-primary text-primary-foreground transition hover:-translate-y-1"><Mail /></a>
           </div>
         </div>
