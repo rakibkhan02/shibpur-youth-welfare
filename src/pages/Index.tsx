@@ -19,6 +19,7 @@ import { useState } from "react";
 
 import communityHero from "@/assets/community-service-bangladesh.jpg";
 import galleryBloodCampaign from "@/assets/gallery-blood-campaign.png";
+import galleryTreePlantation from "@/assets/gallery-tree-plantation.png";
 import sjkfnLogo from "@/assets/sjkfn-logo.jpg";
 import { Button } from "@/components/ui/button";
 
@@ -51,6 +52,7 @@ const donations = [
 
 const galleryImages = [
   { src: galleryBloodCampaign, alt: "ফ্রি রক্তের গ্রুপ নির্ণয় ক্যাম্পেইন", title: "রক্তের গ্রুপ নির্ণয় ক্যাম্পেইন" },
+  { src: galleryTreePlantation, alt: "শিবপুর যুব কল্যাণ ফাউন্ডেশন ১৯ এর বৃক্ষরোপণ কার্যক্রম", title: "বৃক্ষরোপণ কার্যক্রম" },
   { src: communityHero, alt: "বাংলাদেশি তরুণ স্বেচ্ছাসেবীদের সমাজসেবামূলক কার্যক্রম", title: "স্বেচ্ছাসেবী কার্যক্রম" },
   { src: sjkfnLogo, alt: "শিবপুর যুব কল্যাণ ফাউন্ডেশন ১৯ লোগো", title: "ফাউন্ডেশনের পরিচয়" },
 ];
