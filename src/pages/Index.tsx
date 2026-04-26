@@ -117,10 +117,6 @@ const Index = () => {
             <div>
               <p className="font-bold text-primary">আমাদের কার্যক্রম</p>
             </div>
-            <div id="gallery" className="flex gap-3">
-              <Button asChild variant="hero" size="pill"><a href="#gallery"><Sprout /> ছবি গ্যালারি</a></Button>
-              <Button asChild variant="warm" size="pill"><a href="#gallery"><PlayCircle /> ভিডিও গ্যালারি</a></Button>
-            </div>
           </div>
           <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {programs.map((program) => (
@@ -128,6 +124,16 @@ const Index = () => {
                 <Sprout /> {program}
               </Button>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" className="bg-background py-20">
+        <div className="mx-auto max-w-7xl px-4 md:px-8">
+          <p className="font-bold text-primary">গ্যালারি</p>
+          <div className="mt-8 flex flex-wrap gap-4">
+            <Button asChild variant="hero" size="pill"><a href="#gallery"><Sprout /> ছবি গ্যালারি</a></Button>
+            <Button asChild variant="warm" size="pill"><a href="#gallery"><PlayCircle /> ভিডিও গ্যালারি</a></Button>
           </div>
         </div>
       </section>
