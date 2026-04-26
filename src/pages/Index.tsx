@@ -46,7 +46,20 @@ const donations = [
   ["Rocket", "01603462997"],
 ];
 
+const galleryPhotos = [
+  { src: galleryBloodCampaign, alt: "ফ্রি রক্তের গ্রুপ নির্ণয় ক্যাম্পেইন", title: "রক্তের গ্রুপ নির্ণয় ক্যাম্পেইন" },
+  { src: galleryTreePlantation, alt: "বৃক্ষরোপণ কার্যক্রম", title: "বৃক্ষরোপণ কার্যক্রম" },
+  { src: communityHero, alt: "স্বেচ্ছাসেবীদের সমাজসেবামূলক কার্যক্রম", title: "স্বেচ্ছাসেবী কার্যক্রম" },
+];
+
+const galleryVideos = [
+  { title: "ভিডিও যোগ করুন", text: "এখানে YouTube/Facebook ভিডিও লিংক বা আপলোড করা ভিডিও রাখা যাবে।" },
+  { title: "ক্যাম্পেইন ভিডিও", text: "পরবর্তী ভিডিও আইটেমের জন্য জায়গা।" },
+];
+
 const Index = () => {
+  const [activeGallery, setActiveGallery] = useState<"photos" | "videos">("photos");
+
   return (
     <main className="min-h-screen overflow-hidden bg-gradient-soft text-foreground">
       <header className="fixed inset-x-0 top-0 z-50 border-b border-border/70 bg-background/85 backdrop-blur-xl">
