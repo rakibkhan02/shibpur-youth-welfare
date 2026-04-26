@@ -1,4 +1,5 @@
 import {
+  Plus,
   Facebook,
   HandHeart,
   HeartPulse,
@@ -58,6 +59,14 @@ const galleryVideos = [
 
 const Index = () => {
   const [activeGallery, setActiveGallery] = useState<"photos" | "videos">("photos");
+  const [uploadedPhotos, setUploadedPhotos] = useState<Array<{ src: string; title: string }>>([]);
+
+  const handlePhotoUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const files = Array.from(event.target.files ?? []);
+    const newPhotos = files.map((file) => ({ src: URL.createObjectURL(file), title: file.name }));
+    setUploadedPhotos((current) => [...current, ...newPhotos]);
+    event.target.value = "";
+  };
 
   return (
     <main className="min-h-screen overflow-hidden bg-gradient-soft text-foreground">
@@ -152,9 +161,21 @@ const Index = () => {
           </div>
           {activeGallery === "photos" ? (
             <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              <label className="flex aspect-video cursor-pointer flex-col items-center justify-center rounded-2xl border border-dashed border-primary bg-card p-6 text-center shadow-soft transition hover:-translate-y-1 hover:shadow-lift">
+                <Plus className="size-10 text-primary" />
+                <span className="mt-3 text-lg font-extrabold text-deep">ছবি যোগ করুন</span>
+                <span className="mt-1 text-sm text-muted-foreground">একাধিক ছবি select করা যাবে</span>
+                <input type="file" accept="image/*" multiple className="sr-only" onChange={handlePhotoUpload} />
+              </label>
               {galleryPhotos.map((photo) => (
                 <article key={photo.title} className="overflow-hidden rounded-2xl border border-border bg-card shadow-soft">
                   <img src={photo.src} alt={photo.alt} className="aspect-video w-full object-cover" loading="lazy" />
+                  <p className="px-5 py-4 text-lg font-extrabold text-deep">{photo.title}</p>
+                </article>
+              ))}
+              {uploadedPhotos.map((photo) => (
+                <article key={photo.src} className="overflow-hidden rounded-2xl border border-border bg-card shadow-soft">
+                  <img src={photo.src} alt={photo.title} className="aspect-video w-full object-cover" />
                   <p className="px-5 py-4 text-lg font-extrabold text-deep">{photo.title}</p>
                 </article>
               ))}
