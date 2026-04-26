@@ -8,35 +8,45 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 144 45% 98%;
+    --foreground: 154 52% 12%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 154 52% 12%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 154 52% 12%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 151 64% 28%;
+    --primary-foreground: 144 45% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 45 96% 56%;
+    --secondary-foreground: 154 52% 12%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 143 38% 92%;
+    --muted-foreground: 154 20% 38%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 169 70% 36%;
+    --accent-foreground: 144 45% 98%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 145 24% 83%;
+    --input: 145 24% 83%;
+    --ring: 151 64% 28%;
 
-    --radius: 0.5rem;
+    --radius: 0.9rem;
+    --hero: 151 64% 28%;
+    --hero-foreground: 144 45% 98%;
+    --leaf: 132 45% 43%;
+    --sun: 45 96% 56%;
+    --cream: 52 60% 96%;
+    --deep: 154 52% 12%;
+    --gradient-hero: linear-gradient(135deg, hsl(151 64% 28%), hsl(169 70% 36%));
+    --gradient-soft: radial-gradient(circle at top left, hsl(45 96% 56% / 0.22), transparent 36%), linear-gradient(180deg, hsl(144 45% 98%), hsl(143 38% 92%));
+    --shadow-soft: 0 22px 70px -35px hsl(154 52% 12% / 0.35);
+    --shadow-lift: 0 18px 42px -24px hsl(151 64% 28% / 0.55);
 
     --sidebar-background: 0 0% 98%;
 
@@ -100,6 +110,29 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground antialiased;
+    font-family: "Noto Sans Bengali", "Hind Siliguri", system-ui, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .bg-gradient-hero {
+    background: var(--gradient-hero);
+  }
+
+  .bg-gradient-soft {
+    background: var(--gradient-soft);
+  }
+
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .shadow-lift {
+    box-shadow: var(--shadow-lift);
   }
 }
