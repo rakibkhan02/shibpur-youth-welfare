@@ -2,15 +2,20 @@ import {
   Facebook,
   HandHeart,
   HeartPulse,
+  Image as ImageIcon,
   Mail,
   MapPin,
   Menu,
   Phone,
+  PlayCircle,
   Sprout,
   Users,
 } from "lucide-react";
+import { useState } from "react";
 
 import communityHero from "@/assets/community-service-bangladesh.jpg";
+import galleryBloodCampaign from "@/assets/gallery-blood-campaign.png";
+import galleryTreePlantation from "@/assets/gallery-tree-plantation.png";
 import sjkfnLogo from "@/assets/sjkfn-logo.jpg";
 import { Button } from "@/components/ui/button";
 
@@ -18,6 +23,7 @@ const navItems = [
   ["হোম", "#home"],
   ["আমাদের সম্পর্কে", "#about"],
   ["কার্যক্রম", "#programs"],
+  ["গ্যালারি", "#gallery"],
   ["আমাদের সাথে যুক্ত হোন", "#join"],
   ["অনুদান", "#donate"],
   ["যোগাযোগ", "#contact"],
