@@ -1,4 +1,5 @@
 import {
+  Plus,
   Facebook,
   HandHeart,
   HeartPulse,
@@ -58,6 +59,14 @@ const galleryVideos = [
 
 const Index = () => {
   const [activeGallery, setActiveGallery] = useState<"photos" | "videos">("photos");
+  const [uploadedPhotos, setUploadedPhotos] = useState<Array<{ src: string; title: string }>>([]);
+
+  const handlePhotoUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const files = Array.from(event.target.files ?? []);
+    const newPhotos = files.map((file) => ({ src: URL.createObjectURL(file), title: file.name }));
+    setUploadedPhotos((current) => [...current, ...newPhotos]);
+    event.target.value = "";
+  };
 
   return (
     <main className="min-h-screen overflow-hidden bg-gradient-soft text-foreground">
