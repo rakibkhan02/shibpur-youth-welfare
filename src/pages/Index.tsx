@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 
 import communityHero from "@/assets/community-service-bangladesh.jpg";
+import galleryBloodCampaign from "@/assets/gallery-blood-campaign.png";
 import sjkfnLogo from "@/assets/sjkfn-logo.jpg";
 import { Button } from "@/components/ui/button";
 
@@ -133,6 +134,9 @@ const Index = () => {
           <div className="mt-8 flex flex-wrap gap-4">
             <Button asChild variant="hero" size="pill"><a href="#gallery"><Sprout /> ছবি গ্যালারি</a></Button>
             <Button asChild variant="warm" size="pill"><a href="#gallery"><PlayCircle /> ভিডিও গ্যালারি</a></Button>
+          </div>
+          <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+            <img src={galleryBloodCampaign} alt="শিবপুর যুব কল্যাণ ফাউন্ডেশন ১৯ এর ফ্রি রক্তের গ্রুপ নির্ণয় ক্যাম্পেইন" className="aspect-video w-full rounded-2xl border border-border object-cover shadow-soft" loading="lazy" />
           </div>
         </div>
       </section>
