@@ -128,6 +128,16 @@ const Index = () => {
         </div>
       </section>
 
+      <section id="gallery" className="bg-background py-20">
+        <div className="mx-auto max-w-7xl px-4 md:px-8">
+          <p className="font-bold text-primary">গ্যালারি</p>
+          <div className="mt-8 flex flex-wrap gap-4">
+            <Button asChild variant="hero" size="pill"><a href="#gallery"><ImageIcon /> ছবি</a></Button>
+            <Button asChild variant="warm" size="pill"><a href="#gallery"><PlayCircle /> ভিডিও</a></Button>
+          </div>
+        </div>
+      </section>
+
       <section id="join" className="bg-primary py-20 text-primary-foreground">
         <div className="mx-auto grid max-w-7xl gap-8 px-4 md:px-8 lg:grid-cols-[1fr_0.9fr] lg:items-center">
           <div>
