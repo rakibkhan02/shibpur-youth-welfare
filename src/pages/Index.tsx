@@ -1,7 +1,4 @@
 import {
-  ChevronLeft,
-  ChevronRight,
-  X,
   Facebook,
   HandHeart,
   HeartPulse,
@@ -15,11 +12,8 @@ import {
   Users,
   Video,
 } from "lucide-react";
-import { useState } from "react";
 
 import communityHero from "@/assets/community-service-bangladesh.jpg";
-import galleryBloodCampaign from "@/assets/gallery-blood-campaign.png";
-import galleryTreePlantation from "@/assets/gallery-tree-plantation.png";
 import sjkfnLogo from "@/assets/sjkfn-logo.jpg";
 import { Button } from "@/components/ui/button";
 
