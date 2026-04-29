@@ -201,7 +201,7 @@ const Index = () => {
           </div>
           <div className="flex flex-wrap gap-4 lg:justify-end">
             <Button asChild variant="warm" size="pill"><a href="https://forms.gle/EbS1SCTfWbgFPfGz7" target="_blank" rel="noreferrer">ভলেন্টিয়ার ফরম</a></Button>
-            <Button asChild variant="soft" size="pill"><a href="https://forms.google.com" target="_blank" rel="noreferrer">নতুন সদস্য ফরম</a></Button>
+            <Button asChild variant="soft" size="pill"><a href="https://forms.gle/29MeuHyKFRBy2Dvo7" target="_blank" rel="noreferrer">নতুন সদস্য ফরম</a></Button>
           </div>
         </div>
       </section>
