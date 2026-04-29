@@ -216,7 +216,7 @@ const Index = () => {
             {donations.map(([name, number]) => (
               <article key={name} className="rounded-2xl border border-border bg-card p-7 shadow-soft">
                 <p className="text-lg font-bold text-muted-foreground">{name}</p>
-                <p className="mt-2 text-3xl font-black text-primary">{number}</p>
+                <p className="mt-2 font-sans text-3xl font-black text-primary">{number}</p>
               </article>
             ))}
           </div>
@@ -228,8 +228,8 @@ const Index = () => {
           <div>
             <p className="font-bold text-primary">যোগাযোগ</p>
             <div className="mt-8 space-y-4 text-lg font-semibold text-muted-foreground">
-              <p className="flex gap-3"><MapPin className="mt-1 text-primary" /> ৮৩৫০, শিবপুর খাসের হাট, তজুমদ্দিন, ভোলা</p>
-              <p className="flex gap-3"><Phone className="mt-1 text-primary" /> 01615-345486</p>
+              <p className="flex gap-3"><MapPin className="mt-1 text-primary" /> <span><span className="font-sans">৮৩৫০</span>, শিবপুর খাসের হাট, তজুমদ্দিন, ভোলা</span></p>
+              <p className="flex gap-3"><Phone className="mt-1 text-primary" /> <span className="font-sans">01615-345486</span></p>
               <p className="flex gap-3"><Mail className="mt-1 text-primary" /> shibpurjubokollanfoundation@gmail.com</p>
               <p className="flex gap-3"><Facebook className="mt-1 text-primary" /> <a href="https://www.facebook.com/share/1AuY5f7GGL/" target="_blank" rel="noreferrer" className="transition hover:text-primary">Facebook Page link</a></p>
             </div>
