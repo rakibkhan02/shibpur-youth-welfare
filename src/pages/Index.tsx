@@ -48,7 +48,7 @@ const donations = [
 ];
 
 const galleryPhotos = [
-  { src: galleryBloodCampaign, alt: "ফ্রি রক্তের গ্রুপ নির্ণয় ক্যাম্পেইন", title: "রক্তের গ্রুপ নির্ণয় ক্যাম্পেইন" },
+  { src: galleryBloodCampaign, alt: "ফ্রি রক্তের গ্রুপ নির্ণয় ক্যাম্পেইন", title: "১.jpg", description: "রক্তের গ্রুপ নির্ণয় ক্যাম্পেইন" },
   { src: galleryTreePlantation, alt: "বৃক্ষরোপণ কার্যক্রম", title: "বৃক্ষরোপণ কার্যক্রম" },
 ];
 
@@ -171,6 +171,7 @@ const Index = () => {
                 <article key={photo.title} className="overflow-hidden rounded-2xl border border-border bg-card shadow-soft">
                   <img src={photo.src} alt={photo.alt} className="aspect-video w-full object-cover" loading="lazy" />
                   <p className="px-5 py-4 text-lg font-extrabold text-deep">{photo.title}</p>
+                  {photo.description ? <p className="px-5 pb-4 leading-7 text-muted-foreground">{photo.description}</p> : null}
                 </article>
               ))}
               {uploadedPhotos.map((photo) => (
