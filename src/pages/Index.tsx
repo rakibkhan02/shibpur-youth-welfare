@@ -16,7 +16,6 @@ import { useState } from "react";
 
 import communityHero from "@/assets/community-service-bangladesh.jpg";
 import galleryBloodCampaign from "@/assets/gallery-blood-campaign.png";
-import galleryTreePlantation from "@/assets/gallery-tree-plantation.png";
 import sjkfnLogo from "@/assets/sjkfn-logo.jpg";
 import { Button } from "@/components/ui/button";
 
@@ -49,7 +48,6 @@ const donations = [
 
 const galleryPhotos = [
   { src: galleryBloodCampaign, alt: "ফ্রি রক্তের গ্রুপ নির্ণয় ক্যাম্পেইন", title: "১.jpg", description: "রক্তের গ্রুপ নির্ণয় ক্যাম্পেইন" },
-  { src: galleryTreePlantation, alt: "বৃক্ষরোপণ কার্যক্রম", title: "বৃক্ষরোপণ কার্যক্রম" },
 ];
 
 const galleryVideos = [
