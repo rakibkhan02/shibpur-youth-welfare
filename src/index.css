@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@500;600;700;800&family=Hind+Siliguri:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tiro+Bangla:ital@0;1&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -113,7 +113,7 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground antialiased;
-    font-family: "Hind Siliguri", system-ui, sans-serif;
+    font-family: "Tiro Bangla", serif;
     font-feature-settings: "kern" 1;
   }
 
@@ -122,7 +122,7 @@ All colors MUST be HSL.
   h3,
   .font-black,
   .font-extrabold {
-    font-family: "Anek Bangla", "Hind Siliguri", system-ui, sans-serif;
+    font-family: "Tiro Bangla", serif;
     letter-spacing: 0;
   }
 
