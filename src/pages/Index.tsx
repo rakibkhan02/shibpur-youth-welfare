@@ -107,8 +107,8 @@ const Index = () => {
           <div className="hidden lg:block">
             <div className="animate-float rounded-[2rem] border border-card/70 bg-card/75 p-6 shadow-soft backdrop-blur-md">
               <HeartPulse className="mb-5 size-12 text-primary" />
-              <p className="text-3xl font-black text-deep">ঐক্য, সহমর্মিতা ও মানবতার চেতনায়</p>
-              <p className="mt-3 leading-7 text-muted-foreground">অসহায়, দরিদ্র ও বঞ্চিত জনগোষ্ঠীর পাশে দাঁড়ানো আমাদের নৈতিক দায়িত্ব।</p>
+              <p className="text-3xl font-black leading-snug text-deep">হে আদম সন্তান! তুমি দান করো, আমি (আল্লাহ) তোমাকে দান করব।</p>
+              <p className="mt-3 leading-7 text-muted-foreground">[সহিহ বুখারি ও মুসলিম] [১৩]</p>
             </div>
           </div>
         </div>
