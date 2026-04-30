@@ -23,6 +23,8 @@ import galleryTree2 from "@/assets/gallery-tree-2.jpg";
 import galleryTree4 from "@/assets/gallery-tree-4.jpg";
 import galleryTree5 from "@/assets/gallery-tree-5.jpg";
 import galleryUnoMeeting from "@/assets/gallery-uno-meeting.jpg";
+import galleryFinancialHelp from "@/assets/gallery-financial-help.jpg";
+import galleryMedicalHelp from "@/assets/gallery-medical-help.jpg";
 import sjkfnLogo from "@/assets/sjkfn-logo.jpg";
 import { Button } from "@/components/ui/button";
 
@@ -62,6 +64,8 @@ const galleryPhotos = [
   { src: galleryTree4, alt: "বৃক্ষরোপণ কার্যক্রম", title: "৬.jpg", description: "বৃক্ষরোপণ কার্যক্রম" },
   { src: galleryTree5, alt: "বৃক্ষরোপণ কার্যক্রম", title: "৭.jpg", description: "বৃক্ষরোপণ কার্যক্রম" },
   { src: galleryUnoMeeting, alt: "উপজেলা নির্বাহী কর্মকর্তার সাথে সৌজন্য সাক্ষাৎ", title: "৮.jpg", description: "উপজেলা নির্বাহী কর্মকর্তার সাথে সৌজন্য সাক্ষাৎ" },
+  { src: galleryFinancialHelp, alt: "দরিদ্র পরিবারকে আর্থিক সহায়তা প্রদান", title: "৯.jpg", description: "আর্থিক অর্থ দিয়ে দরিদ্র ফ্যামিলির পাশে শিবপুর যুব কল্যাণ ফাউন্ডেশন ১৯" },
+  { src: galleryMedicalHelp, alt: "চিকিৎসার জন্য আর্থিক অনুদান প্রদান", title: "১০.jpg", description: "ফাউন্ডেশনের পক্ষ থেকে চিকিৎসার জন্য আর্থিক অনুদান প্রদান" },
 ];
 
 const galleryVideos = [
