@@ -48,6 +48,7 @@ const donations = [
 ];
 
 const galleryPhotos = [
+  { src: galleryFoodDistribution, alt: "খাদ্য সামগ্রী বিতরণ কর্মসূচি", title: "২.jpg", description: "খাদ্য সামগ্রী বিতরণ" },
   { src: galleryBloodCampaign, alt: "ফ্রি রক্তের গ্রুপ নির্ণয় ক্যাম্পেইন", title: "১.jpg", description: "রক্তের গ্রুপ নির্ণয় ক্যাম্পেইন" },
 ];
 
