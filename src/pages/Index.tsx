@@ -229,7 +229,7 @@ const Index = () => {
               <p className="flex gap-3"><MapPin className="mt-1 text-primary" /> <span><span className="font-sans">৮৩৫০</span>, শিবপুর খাসের হাট, তজুমদ্দিন, ভোলা</span></p>
               <p className="flex gap-3"><Phone className="mt-1 text-primary" /> <span className="font-sans">01615-345486</span></p>
               <p className="flex gap-3"><Mail className="mt-1 text-primary" /> shibpurjubokollanfoundation@gmail.com</p>
-              <p className="flex gap-3"><Facebook className="mt-1 text-primary" /> <a href="https://www.facebook.com/share/1AuY5f7GGL/" target="_blank" rel="noreferrer" className="transition hover:text-primary">Facebook Page link</a></p>
+              <p className="flex gap-3"><Facebook className="mt-1 text-primary" /> <a href="https://www.facebook.com/share/1AuY5f7GGL/" target="_blank" rel="noreferrer" className="transition hover:text-primary">Shibpur Jubo Kollan Foundation 19</a></p>
             </div>
           </div>
           <iframe title="শিবপুর খাসের হাট ম্যাপ" className="min-h-[360px] w-full rounded-2xl border border-border shadow-soft" loading="lazy" src="https://www.google.com/maps?q=Shibpur%20Khaser%20Hat%20Tazumuddin%20Bhola&output=embed" />
