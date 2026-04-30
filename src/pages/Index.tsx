@@ -16,6 +16,7 @@ import { useState } from "react";
 
 import communityHero from "@/assets/community-service-bangladesh.jpg";
 import galleryBloodCampaign from "@/assets/gallery-blood-campaign.png";
+import galleryFoodDistribution from "@/assets/gallery-food-distribution.jpeg";
 import sjkfnLogo from "@/assets/sjkfn-logo.jpg";
 import { Button } from "@/components/ui/button";
 
