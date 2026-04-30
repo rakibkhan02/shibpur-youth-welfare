@@ -17,6 +17,12 @@ import { useState } from "react";
 import communityHero from "@/assets/community-service-bangladesh.jpg";
 import galleryBloodCampaign from "@/assets/gallery-blood-campaign.png";
 import galleryFoodDistribution from "@/assets/gallery-food-distribution.jpeg";
+import galleryEidGift from "@/assets/gallery-eid-gift.jpg";
+import galleryTree1 from "@/assets/gallery-tree-1.jpg";
+import galleryTree2 from "@/assets/gallery-tree-2.jpg";
+import galleryTree4 from "@/assets/gallery-tree-4.jpg";
+import galleryTree5 from "@/assets/gallery-tree-5.jpg";
+import galleryUnoMeeting from "@/assets/gallery-uno-meeting.jpg";
 import sjkfnLogo from "@/assets/sjkfn-logo.jpg";
 import { Button } from "@/components/ui/button";
 
@@ -50,6 +56,12 @@ const donations = [
 const galleryPhotos = [
   { src: galleryFoodDistribution, alt: "খাদ্য সামগ্রী বিতরণ কর্মসূচি", title: "২.jpg", description: "খাদ্য সামগ্রী বিতরণ" },
   { src: galleryBloodCampaign, alt: "ফ্রি রক্তের গ্রুপ নির্ণয় ক্যাম্পেইন", title: "১.jpg", description: "রক্তের গ্রুপ নির্ণয় ক্যাম্পেইন" },
+  { src: galleryEidGift, alt: "ঈদ উপহার - খাদ্য সামগ্রী বিতরণ", title: "৩.jpg", description: "ঈদ উপহার বিতরণ" },
+  { src: galleryTree1, alt: "বৃক্ষরোপণ কার্যক্রম", title: "৪.jpg", description: "বৃক্ষরোপণ কার্যক্রম" },
+  { src: galleryTree2, alt: "বৃক্ষরোপণ কার্যক্রম", title: "৫.jpg", description: "বৃক্ষরোপণ কার্যক্রম" },
+  { src: galleryTree4, alt: "বৃক্ষরোপণ কার্যক্রম", title: "৬.jpg", description: "বৃক্ষরোপণ কার্যক্রম" },
+  { src: galleryTree5, alt: "বৃক্ষরোপণ কার্যক্রম", title: "৭.jpg", description: "বৃক্ষরোপণ কার্যক্রম" },
+  { src: galleryUnoMeeting, alt: "উপজেলা নির্বাহী কর্মকর্তার সাথে সৌজন্য সাক্ষাৎ", title: "৮.jpg", description: "উপজেলা নির্বাহী কর্মকর্তার সাথে সৌজন্য সাক্ষাৎ" },
 ];
 
 const galleryVideos = [
