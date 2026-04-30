@@ -25,6 +25,7 @@ import galleryTree5 from "@/assets/gallery-tree-5.jpg";
 import galleryUnoMeeting from "@/assets/gallery-uno-meeting.jpg";
 import galleryFinancialHelp from "@/assets/gallery-financial-help.jpg";
 import galleryMedicalHelp from "@/assets/gallery-medical-help.jpg";
+import galleryBloodBanner from "@/assets/gallery-blood-banner.png";
 import sjkfnLogo from "@/assets/sjkfn-logo.jpg";
 import { Button } from "@/components/ui/button";
 
@@ -66,6 +67,7 @@ const galleryPhotos = [
   { src: galleryUnoMeeting, alt: "উপজেলা নির্বাহী কর্মকর্তার সাথে সৌজন্য সাক্ষাৎ", title: "৮.jpg", description: "উপজেলা নির্বাহী কর্মকর্তার সাথে সৌজন্য সাক্ষাৎ" },
   { src: galleryFinancialHelp, alt: "দরিদ্র পরিবারকে আর্থিক সহায়তা প্রদান", title: "৯.jpg", description: "আর্থিক অর্থ দিয়ে দরিদ্র ফ্যামিলির পাশে শিবপুর যুব কল্যাণ ফাউন্ডেশন ১৯" },
   { src: galleryMedicalHelp, alt: "চিকিৎসার জন্য আর্থিক অনুদান প্রদান", title: "১০.jpg", description: "ফাউন্ডেশনের পক্ষ থেকে চিকিৎসার জন্য আর্থিক অনুদান প্রদান" },
+  { src: galleryBloodBanner, alt: "ফ্রি রক্তের গ্রুপ নির্ণয় ক্যাম্পেইন ব্যানার", title: "১১.jpg", description: "ফ্রি রক্তের গ্রুপ নির্ণয় ক্যাম্পেইন" },
 ];
 
 const galleryVideos = [
